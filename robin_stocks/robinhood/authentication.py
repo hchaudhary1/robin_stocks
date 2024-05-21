@@ -101,7 +101,8 @@ def login(username=None, password=None, expiresIn=86400, scope='internal', by_sm
         'scope': scope,
         'username': username,
         'challenge_type': challenge_type,
-        'device_token': device_token
+        'device_token': device_token,
+	'long_session' : True,
     }
 
     if mfa_code:
